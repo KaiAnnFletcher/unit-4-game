@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <!--link to CSS reset file-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!--link to CSS file-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!--link to bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--link to jQuery-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <title>Welcome to Crystals Collector</title>
+</head>
+
+<body>
+    <!--First step is to create the skeleton of the web page that contains the game and includes all bootstrap divs
+with relevent headers and text-->
+    <div class=container>
+
+        <div class="jumbotron bg-light">
+            <h1 class="text-center">Crystals Collector!!</h1>
+            <h2 class="text-center">Click to meet the target number!</h2>
+            <div class="text-center"><button class="btn btn-info btn-xs" onclick="playThemeSong()" id="theme">
+            Click for Sound!</button></div>
+        </div>
+
+        <div class=row>
+
+            <div class=col-lg-12>
+                <div class="card">
+                    <h3 class="card-header text-center">Click any Crystal to Begin!</h3>
+                    <div class="card-body text-center">
+                        <div class="border">
+                        <span id = "Random-Number"></span>
+                        </div>
+                        <div class="border">
+                        <h1>WINS</h1><span id = "Wins-counter"></span>
+                        </div>
+                        <div class="border">
+                        <h2>LOSSES</h2><span id = "Loss-counter"></span>
+                        </div>
+                        <div class="border" id ="crystals">
+                            <span id="Crystal-image1"></span>
+                            <span id="Crystal-image2"></span>
+                            <span id="Crystal-image3"></span>
+                            <span id="Crystal-image4"></span>
+                        </div>
+                        <div class="border">
+                        <h3>Your total score is:</h3><span id = "Total"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="./assets/javascript/game.js"></script>
+    </body>
+
+</html>
